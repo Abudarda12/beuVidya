@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEU</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>beuVidya</h1></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="menu">
+            <span class="home"><a href="/"><button>Home</button></a></span>
+             <span class="pyq"><button>PYQ</button>
+                <div class="semester">
+                    <a href="/first"><button>1stsem</button></a>
+                    <a href=""><button>2ndsem</button></a>
+                    <a href=""><button>3rdsem</button></a>
+                    <a href=""><button>4thsem</button></a>
+                    <a href=""><button>5thsem</button></a>
+                    <a href=""><button>6thsem</button></a>
+                    <a href=""><button>7thsem</button></a>
+                    <a href=""><button>8thsem</button></a>
+                </div>
+             </span>
+             <span class="holidays" ><a href="https://drive.google.com/file/d/1tN15JPoZXMMTL2_WTC7z3IpvcgBCZmbI/view?usp=drivesdk" download>
+                <button>Academic Calendar</button>
+                </a></span>
+             <span class="syllabus"><a href="/login"><button>Login</button></a></span>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

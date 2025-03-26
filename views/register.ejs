@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEU</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <%- include("nav.ejs") %>
+        <div class="container">
+            <div class="register">
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="number" name="mobile-number" placeholder="Mobile Number" required><br><br>
+                
+                <!-- Dropdown for Branch -->
+                <select name="branch" required>
+                    <option value="" disabled selected>Select Branch</option>
+                    <option value="CSE">Computer Science and Engineering</option>
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                </select>
+                <br><br>
+                
+                <!-- Dropdown for Year -->
+                <select name="year" required>
+                    <option value="" disabled selected>Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+                <br><br>
+                
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" required><br><br>
+                <button>Register</button>
+                <p>Already a user? <a href="/login">Login</a></p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+    

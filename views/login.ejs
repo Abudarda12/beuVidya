@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEU</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <%- include("nav.ejs") %>
+    <div class="container">
+        <div class="login">
+            <h1>Login</h1>
+            <form action="/" method="get">
+                <input type="text" name="username" placeholder="Username" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+                <button>Log In</button>
+                new user? <a href="/register">Register</a>
+                <br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
